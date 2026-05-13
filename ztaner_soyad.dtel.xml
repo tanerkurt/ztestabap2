@@ -1,33 +1,24 @@
-REPORT ztaner_kisi_list.
-
-TYPES: BEGIN OF ty_kisi,
-         kisi_id TYPE numc10,
-         ad      TYPE ztaner_ad,
-         soyad   TYPE ztaner_soyad,
-         telefon TYPE ztaner_tel,
-       END OF ty_kisi.
-
-DATA: lt_kisi TYPE TABLE OF ty_kisi,
-      ls_kisi TYPE ty_kisi.
-
-START-OF-SELECTION.
-
-  SELECT kisi_id ad soyad telefon
-    INTO TABLE lt_kisi
-    FROM ztaner_kisi.
-
-  IF lt_kisi IS INITIAL.
-    WRITE: / 'Tabloda kayıt bulunamadı.'.
-  ELSE.
-    WRITE: /1 'ID',
-            15 'Ad',
-            70 'Soyad',
-            125 'Telefon'.
-    ULINE.
-    LOOP AT lt_kisi INTO ls_kisi.
-      WRITE: /1 ls_kisi-kisi_id,
-              15 ls_kisi-ad,
-              70 ls_kisi-soyad,
-              125 ls_kisi-telefon.
-    ENDLOOP.
-  ENDIF.
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZTANER_SOYAD</ROLLNAME>
+    <DDLANGUAGE>TR</DDLANGUAGE>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Kişi Soyadı</DDTEXT>
+    <REPTEXT>Soyad</REPTEXT>
+    <SCRTEXT_S>Soyad</SCRTEXT_S>
+    <SCRTEXT_M>Soyad</SCRTEXT_M>
+    <SCRTEXT_L>Soyad</SCRTEXT_L>
+    <DTELMASTER>TR</DTELMASTER>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000050</LENG>
+    <OUTPUTLEN>000050</OUTPUTLEN>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

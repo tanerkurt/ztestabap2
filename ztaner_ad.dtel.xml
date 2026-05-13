@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
-   <PROGDIR>
-    <NAME>ZTANER_KISI_LIST</NAME>
-    <DBAPL>S</DBAPL>
-    <DBNA>D$</DBNA>
-    <CLAS>I</CLAS>
-    <TYPE>1</TYPE>
-    <TITLU>Kişi Listesi</TITLU>
-    <VARCL>X</VARCL>
-    <BREL>X</BREL>
-    <LDBNAME>   </LDBNAME>
-    <UCCHECK>X</UCCHECK>
-   </PROGDIR>
-   <TPOOL>
-    <item>
-     <LANGUAGE>TR</LANGUAGE>
-     <ID>R</ID>
-     <ENTRY>Kişi Listesi</ENTRY>
-     <LENGTH>012</LENGTH>
-    </item>
-   </TPOOL>
+   <DD04V>
+    <ROLLNAME>ZTANER_AD</ROLLNAME>
+    <DDLANGUAGE>TR</DDLANGUAGE>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Kişi Adı</DDTEXT>
+    <REPTEXT>Ad</REPTEXT>
+    <SCRTEXT_S>Ad</SCRTEXT_S>
+    <SCRTEXT_M>Ad</SCRTEXT_M>
+    <SCRTEXT_L>Ad</SCRTEXT_L>
+    <DTELMASTER>TR</DTELMASTER>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000050</LENG>
+    <OUTPUTLEN>000050</OUTPUTLEN>
+   </DD04V>
   </asx:values>
  </asx:abap>
 </abapGit>
